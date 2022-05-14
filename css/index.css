@@ -1,0 +1,625 @@
+*{
+    outline: none;
+    border: none;
+}
+
+
+:root{
+    --orn: orangered;
+    --prim: #6c63ff;
+    --sussec: #00bf8e;
+    --warning: #f7c94b;
+    --dangure: #f75842;
+    --dv: rgba(247,88,66,0.4);
+    --white: #fff;
+    --light: rgba(255,255,255,0.7);
+    --black: #000;
+    --bg:#1f2641;
+    --bg1:#2e3267;
+    --bg2:#424890;
+    --bg3:#8b20fe;
+
+    --tran: all 600ms ease;
+
+    --bgt: url('css/bg-texture.png'); ;
+
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--white);
+    background-image: url('bg-texture.png');
+    overflow-x: hidden;
+}
+
+
+
+
+
+/***************** navbar **************************/
+
+#navdiv{
+    padding-top: 1.5vw;
+    padding-bottom: 1vw;
+    transition: var(--tran);
+}
+
+.a1{
+    text-decoration: none;
+    color: var(--white);
+    transition: var(--tran);
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+}
+
+#logo{
+    font-family:cursive;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 20px var(--orn), -1px 0px 20px var(--orn);
+    transition: all 1s;
+    
+}
+
+#logolink{
+    text-decoration: none;
+}
+button{
+    display: none;
+    color: var(--white);
+    background-color: var(--bg);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#btn1{
+    display: none;
+}
+
+#btn2{
+    display: none;
+}
+
+.a1:hover{
+    color: var(--orn);
+    text-shadow: 2px 2px 20px var(--orn), -1px 0px 20px var(--orn);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--orn);
+}
+
+
+
+@media screen and (max-width:992px) {
+    li{
+        background-color: var(--bg2);
+        text-align: center;
+        padding:10px;
+        box-shadow: 0px 0px 1px var(--bg) inset;
+    }
+    ul{
+       padding-top: 50px;
+    }
+    .lic{
+        position: relative;
+        transition: var(--tran);
+    }
+    #l1{
+        left: -2000px;
+        position: relative;
+        
+    }
+    #l2{
+        left: 2000px;
+        position: relative;
+       
+    }
+    #l3{
+        left: -2000px;
+        position: relative;
+    }
+    #l4{
+        left: 2000px;
+        position: relative;
+    }
+
+    #navdiv{
+
+        box-shadow: 0px 5px 7px black;
+
+        transition: var(--tran);
+        overflow-x: hidden;
+        background: var(--bg);
+
+        /* ******************************************************************* */
+
+        /* solutuion i got by jugad */
+
+        /* background:linear-gradient(0deg, var(--bg) 83%, var(--bg2) 17%) ; */
+
+        /* ******************************************************************** */
+    }
+
+    body{
+        
+        background-image: none;
+    
+    }
+
+    button{
+        position: absolute;
+        right: 5vw;
+        transition: all 1s;
+        border-radius: 4px ;
+    }
+    #btn1{
+        display: block;
+        background-color: var(--bg2);
+    }
+    #btn2{
+        display: none;
+        background-color: var(--bg2);
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ////////////////////////////  Intro \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+#headtext{
+    margin-top: 220px;
+}
+#headsvgimg{
+    height: 20vw;
+    margin-top: 200px;
+
+    transition: all 1s;
+    position: relative;
+    top: -60px;
+    opacity: 0; 
+}
+#learnmore{
+    background-color: var(--dangure);
+    padding: 10px 40px;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: var(--tran);
+    font-size: 20px;
+
+    position: relative;
+    top: 30px;
+    transition: all 1s;
+    opacity: 0;  
+}
+
+#learnmore:hover{
+    box-shadow: 6px 6px 10px black, -3px -3px 6px gray;
+}
+
+#tagline{
+    transition: all 1s;
+    margin-bottom: 2vw;
+
+    position: relative;
+    top: 30px;
+
+    opacity: 0;                 /* to make text transperent use this  opacity property*/
+}
+#description{
+    margin-bottom: 3vw;
+
+    position: relative;
+    top: 30px;
+    transition: all 1s;
+    opacity: 0;  
+}
+
+
+
+@media screen and (max-width: 992px) {
+    #tagline , #description{
+        margin-bottom: 5vw;
+
+    }
+    #headtext{
+        z-index: 8;
+    }
+    #navdiv{
+        z-index: 9;
+        height: 60px;
+        background-color: var(--bg);
+        overflow: visible;
+    }
+    .lic{
+        z-index: 11;
+    }
+    #headimg{
+        text-align: center;
+    }
+    #headsvgimg{
+        height: 210px;
+        margin-top: 100px;
+        top: 60px;
+    }
+    #headtext{
+        margin-top: 2vw;
+    }
+    #tagline{
+        margin-top: 10vw;
+        margin-bottom: 8vw;
+    }
+    #description{
+        
+        margin-bottom: 7vw;
+    }
+
+}
+
+
+
+/* ////////////////////////////  Intro end  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////  Categories \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+#catheight{
+    height: 400px;
+    margin-bottom: 300px;
+}
+#categoriesmainfluid{
+    background-color: var(--bg1);
+    margin-top: 100px;
+    padding: 5vw;
+    
+}
+
+#categoriesmain{
+    box-sizing: border-box;
+    height: 280px;
+}
+
+#categories{
+    /* margin-top: 4vw; */
+    margin-bottom: 30px;
+}
+
+
+#categoriesmainfluid p{
+    margin-bottom: 40px;
+}
+
+
+#seeall{
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--bg);
+    padding: 10px 30px;
+    font-weight: 900;
+    border-radius: 5px;
+    transition: var(--tran);
+}
+
+#seeall:hover{
+    color: var(--orn);
+    box-shadow: 4px 4px 6px black , -4px -4px 6px gray;
+}
+
+
+.gridofc{
+    background-color: var(--bg2);
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 20px 20px 0px 20px;
+    box-sizing: border-box;
+
+    position: relative;
+
+    transition: all 1s;
+}
+
+#g1{
+    left: 1500px;
+}
+#g2{
+    left: 1700px;
+}
+#g3{
+    left: 500px;
+}
+#g4{
+    left: 1500px;
+}
+#g5{
+    left: 1000px;
+}
+#g6{
+    left: 500px;
+}
+
+.gridofc:hover{
+    transition: all 0.3s;
+    box-shadow: 5px 5px 10px black, -3px -3px 5px rgb(126, 126, 126);
+}
+.icn{
+    /* background-color: #f75842; */
+    font-size: 17px;
+    padding: 3px 6px;
+    border-radius: 10px;
+
+
+}
+
+.gridofc div{
+    text-shadow: 5px 5px 10px black;
+}
+
+.gridofc h5{
+    margin-top: 5px;
+}
+
+#ic1{
+    background-color: var(--warning);
+}
+#ic2{
+    background-color: var(--sussec);
+}
+#ic3{
+    background-color: var(--dangure);
+}
+#ic4{
+    background-color: var(--orn);
+}
+#ic5{
+    background-color: var(--prim);
+}
+#ic6{
+    background-color: var(--black);
+}
+
+.gridofc p{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+@media screen and (max-width:992px) {
+    #catheight{
+        /* border: 1px solid red; */
+        height: 800px;
+    }
+    .gridofc{
+        margin-bottom: 0px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .gridofc p{
+        font-size: 12px;
+    }
+    #g1{
+        left: -1500px;
+    }
+    #g2{
+        left: -1700px;
+    }
+    #g3{
+        left: -1500px;
+    }
+    #g4{
+        left: -1500px;
+    }
+    #g5{
+        left: -1000px;
+    }
+    #g6{
+        left: -1500px;
+    }
+}
+
+
+/* ////////////////////////////  categories end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+
+
+
+
+/* ////////////////////////////  popular cources\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+
+
+#ourcor{
+    text-align: center;
+}
+
+#corcetagline{
+    margin-bottom: 4vw;
+}
+
+#courcemaindiv{
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+
+
+/* for card */
+
+#courcemaindiv img{
+    width: 104%;
+}
+
+.courcecard{
+    text-align: center;
+    border: 2px solid var(--bg1);
+    border-radius: 0px 20px 0px 0px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-top: 40px;
+    transition : var(--tran);
+    overflow: hidden;
+
+}
+
+.courcecard:hover{
+    background-color: var(--bg1);
+    box-shadow: 0px -3px 7px black inset;
+}
+
+.courcecardhead{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#courcemaindiv p{
+    font-size: 14px;
+}
+
+
+.learnmorediv{
+    transition: var(--tran);
+    margin-bottom: 7px;
+    margin-top: 30px;
+    position: relative;
+    top: 50px;
+
+    
+}
+
+.learnmorelink{
+    color: var(--white);
+    background-color: var(--orn);
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: var(--tran);
+    border-radius: 10px 10px 0px 0px;
+}
+.learnmorelink:hover{
+    color: var(--bg);
+}
+.courcecard:hover .learnmorediv{
+    top: 0px;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .learnmorediv{
+        position: static;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////  popular cources  end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+/* swiper   */
+
+#coreteam{
+    text-align: center;
+}
+#swipercover{
+    background-color: var(--bg3);
+}
+.swiper-slide p{
+    background-color: var(--sussec);
+    display: inline-block;
+    padding: 0px 10px 4px 10px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.swiper {
+width: 100%;
+padding-top: 50px;
+padding-bottom: 100px;
+}
+
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 200px;
+height: 200px;
+overflow: visible;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+}
+
+
+
+/* ////////////////////////////  footer \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+#footer p{
+    margin: 5px;
+}
+.footerlink{
+    text-decoration: none;
+    color: var(--white);
+    transition: var(--tran);
+}
+.footerlink:hover{
+    color: var(--orn);
+    text-shadow: 2px 2px 20px var(--orn), -1px 0px 20px var(--orn);
+}
+.Footersubhead{
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--dangure);
+}
+
+#footer{
+    background-color: var(--bg1);
+    margin-top: 40px;
+}
+
+@media screen and (max-width:992px){
+    #footer p{
+        text-align: center;
+    }
+    .Footersubhead{
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+/* ////////////////////////////  footer \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */

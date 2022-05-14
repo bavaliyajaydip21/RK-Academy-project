@@ -1,0 +1,125 @@
+*{
+    outline: none;
+    border: none;
+}
+
+
+:root{
+    --orn: orangered;
+    --prim: #6c63ff;
+    --sussec: #00bf8e;
+    --warning: #f7c94b;
+    --dangure: #f75842;
+    --dv: rgba(247,88,66,0.4);
+    --white: #fff;
+    --light: rgba(255,255,255,0.7);
+    --black: #000;
+    --bg:#1f2641;
+    --bg1:#2e3267;
+    --bg2:#424890;
+    --bg3:#8b20fe;
+
+    --tran: all 600ms ease;
+
+    --bgt: url('css/bg-texture.png'); ;
+
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--white);
+    background-image: url('bg-texture.png');
+    overflow-x: hidden;
+}
+
+
+
+#contactmaindiv{
+    margin-top: 150px;
+    margin-bottom: 200px;
+    background-color: var(--bg1);
+    height: 500px;
+}
+
+#contactleft{
+    margin-top: -50px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--bg3);
+}
+
+#contactleft img{
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+#contactleft h2{
+    margin-bottom: 20px;
+}
+
+#contactleft p{
+    margin-bottom: 35px;
+    opacity: 0.8;
+}
+
+.contacticndetail{
+    display: inline-block;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.sociallink {
+    color: white;
+    padding: 7px 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: var(--bg1);
+    border-radius: 50%;
+    transition: var(--tran);
+
+}
+
+
+#contctright{
+    align-self: center;
+
+}
+
+.formfield{
+    background-color: var(--bg);
+    padding: 10px 20px;
+    margin: 20px ;
+    color: white;
+    border-radius: 10px;
+}
+
+.formfield::placeholder{
+    color: white;
+}
+
+#submit{
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: var(--orn);
+    color: white;
+    border-radius: 10px;
+
+
+}
+
+
+@media screen and (max-width:992px) {
+    #contactmaindiv{
+        margin-top: 150px;
+        margin-bottom: 30px;
+        background-color: var(--bg1);
+        height: 1100px;
+    }
+    
+    #contactleft{
+        margin-top: -50px;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: var(--bg3);
+    }
+}
